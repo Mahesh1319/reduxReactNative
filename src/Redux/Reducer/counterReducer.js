@@ -2,7 +2,7 @@
 
 const initialState = {
     count: 0,
-    //data: []
+    data: []
 }
 
 const counterReducer = (state = initialState, action) => {
@@ -15,9 +15,9 @@ const counterReducer = (state = initialState, action) => {
 
             return { ...state, count: state.count - 1 }
 
-        // case "FETCHDATA":
+        case "FETCHDATA":
 
-        //     return { ...state, data: action.payload }
+            return { ...state, data: action.payload }
 
         default:
             return state
